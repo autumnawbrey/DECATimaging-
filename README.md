@@ -14,4 +14,4 @@ Code for aligning DECAT images
 
 6. Need to run alignimages.py 3 times per survey to account for all filters within each field. 
 
-7. **Run stiff** on the three finalized, stacked, and aligned images (so the g, r, and i filter images) for each survey. This will give one final .tif image for one chipnumber for the survey (this only works for three filters though, no more than that). **To convert this tif to a jpg, use tiftojpg.ipynb**
+7. **Run stiff** on the three finalized, stacked, and aligned images (so the g, r, and i filter images) for each survey. This will give one final .tif image for one chipnumber for the survey (this only works for three filters though, no more than that). **To convert this tif to a jpg, use converttiftojpg.ipynb**
