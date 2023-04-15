@@ -9,7 +9,7 @@ Code for aligning DECAT images
       
       This uses swarp to stack the images
       (image 1: image you will be aligning them all too) (all other images: pathway to all images including * at the end to account for them all) 
-      alignimages-Copy1.py /global/u2/a/autumnaw/WorkinginDecatDatabase/DECATfields/ELAIS_E2/ELAIS_E2_g/cc4d_……chipnum_filter.fits   
+      alignimages.py /global/u2/a/autumnaw/WorkinginDecatDatabase/DECATfields/ELAIS_E2/ELAIS_E2_g/cc4d_……chipnum_filter.fits   
       /global/u2/a/autumnaw/WorkinginDecatDatabase/DECATfields/ELAIS_E2/ELAIS_E2_g/c* 
 
 6. Need to run alignimages.py 3 times per survey to account for all filters within each field. 
