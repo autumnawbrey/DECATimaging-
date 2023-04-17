@@ -4,7 +4,7 @@ Code for aligning DECAT images
 2. **Use 2downloadfitsfiles.ipynb** to take the dataframes with the quality images, and download the fits files off the database to use then use for stacking
 3. Once all fits files are downloaded (this may take up a lot of memory), **pick a good image to run through 3findcenter.ipynb**, which will give the center RA and center DEC to align all the other images when stacking with swarp
 **Edit alignimages.py** and include the center RA and DEC that was found  for the image you want to align all other images too. Also, edit with what you want to name the final stacked and aligned image file
-4. **Run bash shifter.sh** to go into curveball image
+4. **Run bash shifter.sh** to go into curveball image. In order to set this up, and to access curveball more info at: https://gitlab.com/robknop/curveball
 5. **Run alignimages.py** image1pathway allotherimagespathway 
       
       This uses swarp to stack the images
