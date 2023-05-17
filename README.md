@@ -3,7 +3,8 @@ Code for aligning DECAT images
 1. **Use 1cutoffsforsurveys.ipynb** to pull all the images from the database, and apply cutoffs to seeing, magzp, and skysig to pull out the quality images
 2. **Use 2downloadfitsfiles.ipynb** to take the dataframes with the quality images, and download the fits files off the database to then use for stacking
 3. Once all fits files are downloaded (this may take up a lot of memory), **pick a good image to run through 3findcenter.ipynb**, which will give the center RA and center DEC to align all the other images when stacking with swarp
-**Edit alignimages.py** and include the center RA and DEC that was found  for the image you want to align all other images too. Also, edit with what you want to name the final stacked and aligned image file
+**Edit alignimages.py** and include the center RA and DEC as parameters for the "-CENTER" argument that was found for the good image you want to align all other images too. Also, edit the file with what you want to name the final stacked and aligned image file under "-IMAGEOUT_NAME" and "-WEIGHTOUT_NAME"
+
 4. **Run bash shifter.sh** to go into curveball image. In order to set this up, and to access curveball more info at: https://gitlab.com/robknop/curveball
 5. **Run alignimages.py** image1pathway allotherimagespathway 
       
