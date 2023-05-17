@@ -12,7 +12,7 @@ Code for aligning DECAT images
       python alignimages.py /global/u2/a/autumnaw/WorkinginDecatDatabase/DECATfields/ELAIS_E2/ELAIS_E2_g/cc4d_……chipnum_filter.fits   
       /global/u2/a/autumnaw/WorkinginDecatDatabase/DECATfields/ELAIS_E2/ELAIS_E2_g/c* 
 
-6. Need to run alignimages.py 3 times per survey to account for all filters within each field. 
+6. Need to run alignimages.py three times per survey to account for all filters within each field. 
 
 7. **Run stiff** on the three finalized, stacked, and aligned images (so the g, r, and i filter images) for each survey. This will give one final .tif image for one chipnumber for the survey (this only works for three filters though, no more than that). **To convert this tif to a jpg, use converttiftojpg.ipynb**
 
